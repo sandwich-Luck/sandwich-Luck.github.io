@@ -201,7 +201,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">عُدل في</span>
-        <time title="عُدل: 2021-04-25 15:23:18" itemprop="dateModified" datetime="2021-04-25T15:23:18+08:00">2021-04-25</time>
+        <time title="عُدل: 2021-04-25 16:08:45" itemprop="dateModified" datetime="2021-04-25T16:08:45+08:00">2021-04-25</time>
       </span>
 
   
@@ -216,7 +216,7 @@
     <div class="post-body" itemprop="articleBody">
           <h4 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a>什么是Hexo？</h4><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub上，是搭建博客的首选框架。</p>
 <h4 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a>GitHub创建个人仓库</h4><p>GitHub中的New repository创建新仓库，仓库名应该为：<code>用户名.github.io</code>  ，这是固定写法。</p>
-<p><img src="C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20210425150228479.png" alt="image-20210425150228479"></p>
+<p>![image-20210425150228479](./GitHub+Hexo 搭建个人网站/image-20210425150228479.png)</p>
 <h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h4><p>Hexo基于Node.js，下载地址：<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
 <p>安装Node.js会包含环境变量及npm的安装，安装后，检测Node.js是否安装成功，在命令行中输入 node -v :</p>
 <p>检测npm是否安装成功，在命令行中输入npm -v </p>
@@ -235,7 +235,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new test_my_site</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>完成后，打开浏览器输入地址：localhost:4000</p>
-<p><img src="C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20210425151204395.png" alt="image-20210425151204395"></p>
+<p>![image-20210425151204395](./GitHub+Hexo 搭建个人网站/image-20210425151204395.png)</p>
 <h4 id="Hexo常用命令"><a href="#Hexo常用命令" class="headerlink" title="Hexo常用命令"></a>Hexo常用命令</h4><blockquote>
 <p>npm install hexo -g #安装Hexo<br>npm update hexo -g #升级<br>hexo init #初始化博客</p>
 <p>命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p>
@@ -243,9 +243,9 @@
 </blockquote>
 <h4 id="推送网站"><a href="#推送网站" class="headerlink" title="推送网站"></a>推送网站</h4><p>上面只是在本地预览，接下来要做的就是就是推送网站，也就是发布网站，让我们的网站可以被更多的人访问。</p>
 <p>在设置之前，需要解释一个概念，在blog根目录里的_config.yml文件称为<strong>站点</strong>配置文件。</p>
-<p><img src="C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20210425151551057.png" alt="image-20210425151551057"></p>
+<p>![image-20210425151551057](./GitHub+Hexo 搭建个人网站/image-20210425151551057.png)</p>
 <p>进入根目录里的themes文件夹，里面也有个_config.yml文件，这个称为<strong>主题</strong>配置文件，如下图</p>
-<p><img src="C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20210425151635934.png" alt="image-20210425151635934"></p>
+<p>![image-20210425151635934](./GitHub+Hexo 搭建个人网站/image-20210425151635934.png)</p>
 <p>下一步将我们的Hexo与GitHub关联起来，打开<code>站点</code>的配置文件_config.yml，翻到最后修改为：</p>
 <p>deploy:<br>type: git<br>repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git<br>branch: master</p>
 <p>保存站点配置文件。</p>
