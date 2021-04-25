@@ -2715,3 +2715,33 @@ ul.breadcrumb li:last-child {
     margin-bottom: 10px;
   }
 }
+body {
+  background: url("/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: var(--text-color);
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 1em;
+  line-height: 2;
+  min-height: 100%;
+  position: relative;
+  transition: padding 0.2s ease-in-out;
+}
+.header-inner {
+  background: rgba(255,255,255,0.9);
+}
+.sidebar {
+  transition-duration: 0.4s;
+  opacity: 0.85;
+}
+.main-inner {
+  background: var(--content-bg-color);
+  box-shadow: initial;
+  padding: 40px;
+  opacity: 0.9;
+}
+.popup {
+  opacity: 0.9;
+}
